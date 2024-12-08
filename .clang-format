@@ -1,0 +1,23 @@
+# VS 编码规范
+
+BasedOnStyle: LLVM
+
+UseTab: Never 
+
+IndentWidth: 4 
+
+TabWidth: 4 
+
+BreakBeforeBraces: Allman 
+
+AllowShortIfStatementsOnASingleLine: false
+
+IndentCaseLabels: false 
+
+ColumnLimit: 0 
+
+AccessModifierOffset: -2
+
+NamespaceIndentation: All
+
+FixNamespaceComments: false
