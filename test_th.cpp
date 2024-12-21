@@ -1,11 +1,9 @@
-#include <chrono>
-#include <future>
-#include <iostream>
-#include <thread>
+#include "threadpool.hpp"
+
+#include <print>
 
 using namespace std;
-
-#include "threadpool.hpp"
+using namespace dxc;
 
 int sum1(int a, int b)
 {
@@ -13,11 +11,13 @@ int sum1(int a, int b)
     // 比较耗时
     return a + b;
 }
+
 int sum2(int a, int b, int c)
 {
     this_thread::sleep_for(chrono::seconds(2));
     return a + b + c;
 }
+
 int main()
 {
     Threadpool pool;
@@ -49,5 +49,6 @@ int main()
                         });
 
     getchar();
+
     return 0;
 }
